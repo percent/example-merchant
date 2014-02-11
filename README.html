@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/merchant.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="navbar-right">
+            <ul class="nav navbar-nav" data-prcnt-show-if-no-user>
+              <li><a href="#" data-prcnt-sign-up="password, github">Sign up</a></li>
+              <li><a href="#" data-prcnt-sign-in="password, github">Sign in</a></li>
+            </ul>
+            <ul class="nav navbar-nav" data-prcnt-show-if-user>
+              <li><a href="#" data-prcnt-edit-profile>Hello <span data-prcnt-user-prop="name"></span> (<span data-prcnt-user-prop="email"></span>)!</a></li>
+              <li><a href="#" data-prcnt-sign-out>Sign out</a></li>
+            </ul>
+          </div>
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <h1>Install</h1>
+<pre><code class="language-bash">$ git checkout git@github.com:percent/example-merchant.git
+$ cd example-merchant
+$ npm i</code></pre>
+<h1>Run</h1>
+<pre><code class="language-bash">$ npm i harp -g
+$ harp server</code></pre>
+
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://assets.percent.io/js/percent-ui.js"></script>
+    <script>
+      percent.app.id('TESTAPP2');
+    </script>
+  </body>
+</html>
