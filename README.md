@@ -1,7 +1,7 @@
 # Install
 
 ```bash
-$ git checkout git@github.com:percent/example-merchant.git
+$ git clone git@github.com:percent/example-merchant.git
 $ cd example-merchant
 $ npm i
 ```
